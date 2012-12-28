@@ -23,7 +23,10 @@ class messenger
 			{
 				$mess = $_SESSION['messenger']['message'];
 				$this->clear();
-				return '<div id="messenger" class="message1 shadow1" onclick="ds();">'.$mess.'</div>';
+				echo '<script> 
+						$("#messenger").html("'.$mess.'");
+					</script>';
+				
 			}
 		}
 		

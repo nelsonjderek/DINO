@@ -13,10 +13,12 @@
 		var $raw_start;
 		var $raw_end;
 		var $errors;
+
 		
 		/* constructor */
 		function database($host,$user,$pass,$database)
 		{
+
 			$this->connect($host,$user,$pass,$database);
 			$this->num_queries = '';
 			$this->raw_start = '<<[asdf';
@@ -26,7 +28,7 @@
 		/* connect */
 		function connect($host,$user,$pass,$database)
 		{
-			$this->connection = mysql_connect($host,$user,$pass) or $this->handle_error('cannot connect to database');
+			$this->connection = mysql_connect($host,$user,$pass,true) or $this->handle_error('cannot connect to database');
 			mysql_select_db($database,$this->connection) or $this->handle_error('cannot find requested database');
 		}
 

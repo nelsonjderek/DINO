@@ -55,6 +55,8 @@
 
 
  $messenger = new messenger();
+ $M_database = new Database($SYSM_HOST,$SYSM_USER,$SYSM_PASS,$SYSM_DATABASE);
+ 
 
 ?>
 
@@ -81,8 +83,15 @@ $("#login_submit").live("click", function() {
 												 });
 
 
-	
-$('#messenger').delay(3000).fadeOut(600);
+	if ($('#messenger').is(':empty')) {
+			
+			$('#messenger').hide();
+
+
+			}else {
+				$('#messenger').delay(3000).fadeOut(600);
+
+			}
 																	   
 
 
@@ -129,7 +138,9 @@ $('#messenger').delay(3000).fadeOut(600);
 <? include("header.php"); ?>
 
 <div id="main">
-	<?php  echo $messenger->output(); ?>
+
+	<div id="messenger" class="message1 shadow1" onclick="ds();"></div>
+	
     <?php include_once('modules/'.$_SESSION['master']['page']); ?>
 
 
@@ -139,6 +150,7 @@ $('#messenger').delay(3000).fadeOut(600);
 
 
 </div>
+<?php $messenger->output(); ?>
 
 <?php include("footer.php"); ?>
 <?php }else { 

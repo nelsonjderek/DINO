@@ -24,7 +24,7 @@
 		
 		while ($row = mysql_fetch_assoc($result)) {
 		    echo '<div>
-		    <h3 style="border-bottom:solid;">'.$row['b_name'].'</h3>
+		    <a href="?p=clients/editclient.php&clid='.$row['client_id'].'"><h3 style="border-bottom:solid;">'.$row['b_name'].'</h3></a>
 		    <p><h3>Contact Info:</h3><br />
 		    <b>First Name:</b> '.$row['f_name'].'<b>Last Name:</b> '.$row['l_name'].'<b>First Name:</b> '.$row['email'].'<b>Phone</b> '.$row['p_phone'].'-'.$row['m_phone'].'-'.$row['e_phone'].'<br /><br />
 		    <b>Address:</b> '.$row['address'].'<b>City:</b> '.$row['city'].'<b>Zip</b> '.$row['zip'];

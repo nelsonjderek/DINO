@@ -2,24 +2,85 @@
 	class BuildForm
 	{
 
-		function CreateForm($fields,$method,$action,$name,$class,$id)
+		var $fields;
+		var $content;
+		var $displayval = 1;
+
+
+
+		function CreateForm($method,$action,$name,$class,$id)
 		{
-			$content = '<form method="" action="" name="" class="" id="" >';
-
-			$content .= $fields;
-
-			$content .= '</form>';
-
-			return $content;
+			$this->content = '<form method="'.$method.'" action="'.$action.'" name="'.$name.'" class="'.$class.'" id="'.$id.'" >';
+			$this->content .= $this->fields;
+			$this->content .= '</form>';
+			return $this->content;
 
 		}
 
-
-		function CreateTextField($name,$value,$class)
+		function esf($method,$action,$name,$class,$id)
 		{
-			$field = '<input type="text" name="" value="" class="" />';
+			echo '<form method="'.$method.'" action="'.$action.'" name="'.$name.'" class="'.$class.'" id="'.$id.'" >';
 
-			return $field;
+		}
+		function eef()
+		{
+			echo '</form>';
+			
+
+		}
+
+		function display($value) {
+
+			if ($this->display = 1) {
+				$this->content .= $value;
+
+			} else if ($this->display = 2) {
+
+				return $value;
+
+			}else {
+				echo $value;
+			}
+		}
+
+		function CreateTextField($label,$name,$value,$class)
+		{
+			$field = '<div style="float:left;margin:10px;" ><label>'.$label.'</label><input type="text" name="'.$name.'" value="'.$value.'" class="'.$class.'" /></div>';
+			
+			$this->fields .= $field;
+		
+
+
+		}
+
+		//echo textfield
+		function etf($label,$name,$value,$class)
+		{
+			$field = '<div style="float:left;margin:10px;" ><label>'.$label.'</label><input type="text" name="'.$name.'" value="'.$value.'" class="'.$class.'" /></div>';
+			
+			echo $field;
+		}
+
+	// echo hidden field
+		function ehidden($name,$value,$class)
+		{
+			$field = '<input type="hidden" name="'.$name.'" value="'.$value.'" class="'.$class.'" />';
+			echo $field;
+
+		}
+		// echo  button
+		function ebutton($name,$type,$text,$value,$class)
+		{
+			$field = '<button type="'.$type.'" value="'.$value.'" class="'.$class.'">'.$text.'</button>';
+
+			echo $field;
+
+		}
+
+		function CreateHidden($name,$value,$class)
+		{
+			$field = '<input type="hidden" name="'.$name.'" value="'.$value.'" class="'.$class.'" />';
+			$this->fields .= $field;
 
 		}
 
@@ -30,6 +91,31 @@
 			return $field;
 
 		}
+		// echo textarea
+		function eta($label,$name,$value,$class)
+		{
+			$field = '<div style="float:left;margin:10px;" ><label>'.$label.'</label><textarea type="text" name="" class="" value="" ></textarea></div>';
+
+			echo $field;
+
+		}
+
+		
+
+		function CreateButton($name,$type,$text,$value,$class)
+		{
+			$field = '<button type="'.$type.'" value="'.$value.'" class="'.$class.'">'.$text.'</button>';
+
+			$this->fields .= $field;
+
+		}
+		function addHTML($html)
+		{
+
+			$this->fields .= $html;
+
+		}
+
 
 
 

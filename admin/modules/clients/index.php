@@ -17,6 +17,10 @@
 
 		$home->Display();
 
+
+
+		
+
 		$M_database->connect($SYSM_HOST,$SYSM_USER,$SYSM_PASS,$SYSM_DATABASE);
 
 		$query = 'SELECT * FROM LA_clients';

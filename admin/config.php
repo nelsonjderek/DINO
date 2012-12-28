@@ -6,9 +6,9 @@ session_start();
 //Global Database Variables 
 
 		$SYSA_HOST = 'localhost';
-		$SYSA_USER = 'root';
-		$SYSA_PASS = 'root';
-		$SYSA_DATABASE = 'logan';
+		$SYSA_USER = 'client';
+		$SYSA_PASS = 'test';
+		$SYSA_DATABASE = 'loganclient';
 
 
 		$SYSM_HOST = 'localhost';
