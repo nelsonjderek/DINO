@@ -1,0 +1,235 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/*Header Styles*/
+
+#header {
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+	height:50px;
+	background-color: rgba(183,207,231,.5);
+	-moz-box-shadow: 0px 5px 10px rgba(0,0,0,0.3);
+	-webkit-box-shadow: 0px 5px 10px rgba(0,0,0,0.3);
+
+}
+
+
+/*Header Navigation Styles*/
+#header_nav {
+	width:100%;
+	min-width:1000px;
+	padding: 10 20px 0 0;
+	margin-left:auto;
+	margin-right:auto;
+
+}
+#header_nav a {
+	text-decoration: none;
+	color:#a8a7a4;
+}
+
+#main {
+	
+	
+	margin-left:200px;
+	height:100%;
+	background-color:#FFFFFF;
+	
+	padding:15px;
+	
+
+	
+}
+#side-main-nav { float:left;width:200px; background:#ffffff; height:100%; background-image: url('../images/backgrounds/overview_divider_up.jpg'); background-position:right; background-repeat:no-repeat; }
+
+#sonaarrlogobox {
+
+	background-color: rgba(255,255,255,0.3);
+	height: 70px;
+	width: 70px;
+	position: absolute;
+}
+#sonaarrnavbar {
+	height: 40px;
+	margin-left: 100px;
+	margin-top: 15px;
+	position: absolute;
+	color: #222;
+}
+#sonaarr_footer {
+	margin-top:20px;
+	height:40px;
+	width:1000px;
+	opacity:0.5;
+	margin-right:auto;
+	margin-left:auto;
+}
+#footer_small_print {
+	font-size:12px;
+	margin-top:15px;
+	margin-left:18px;
+	width:600px;
+	height:20px;
+	color:#888;
+	
+}
+.footer_links {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #444;
+	padding-right: 20px;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #CCC;
+	line-height: 30px;
+	padding-left: 20px;
+	float: left;
+}
+.navbarquote {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 30px;
+	color: #FFF;
+	background-color: #222;
+	padding-left:20px;
+	padding-right:20px;
+	height: 30px;
+	text-align: center;
+	float: left;
+	margin-left: 25px;
+	text-decoration:none;
+}
+.navbarlinks {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #444;
+	padding-right: 20px;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #CCC;
+	line-height: 30px;
+	padding-left: 20px;
+	float: left;
+}
+.fb-like {
+	margin-top:4px;
+	margin-left:5px;
+}
+.link1 {
+	text-decoration: none;
+	color: #444;	
+}
+.link1:hover {
+	color:#09F;
+}
+#client_login {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	float: right;
+	color: #FFF;
+	background-color:rgba(125,125,125,0.3);
+	padding: 10px;
+	margin-top: 25px;
+	text-decoration: none;
+}
+#client_login:hover {
+	background-color:rgba(0,102,153,0.6)
+}
+
+
+/*Minor Styles*/
+.blurb h2,h3 {
+	color: #555;
+}
+.box {
+	background-color: #FFF;
+	float:left;
+	padding:5px;
+	color: #222;
+	font-size: 14px;
+	line-height:20px;
+}
+.blurb {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height:20px;
+	margin:5px;
+	float: left;
+	color: #222;
+}
+.border_bttm_light {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #DDD;
+	margin:5px;
+}
+.border_right_light {
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-color: #DDD;
+	border-right-color: #DDD;
+	border-bottom-color: #DDD;
+	border-left-color: #DDD;
+	border-right-style: solid;
+}
+
+/*Main Frame*/
+
+body {
+	background-repeat: repeat;
+	margin: 0px;
+	background-image: url("../images/backgrounds/gray_jean.png");
+	font-family: Helvetica, Arial, sans-serif;
+
+	
+	
+}
+
+
+/*Messenger*/
+.message1 {
+	background-color:rgba(252,8,0,0.5);
+	padding:10px;
+	width:400px;
+	position:absolute;
+	margin-left:285px;
+	margin-top:-15px;
+	height:50px;
+
+}
+
+/*shadows*/
+.shadow1{
+	-moz-box-shadow: 0px 5px 10px rgba(0,0,0,0.3);
+	-webkit-box-shadow: 0px 5px 10px rgba(0,0,0,0.3);
+
+}
+h1 {
+	font-family: 'Comfortaa', cursive;
+}
+
+
+/*Sign in Form */
+.form-signin {
+
+        padding: 19px 29px 29px;
+        margin: 0 auto 20px;
+        background-color: #fff;
+        border: 1px solid #e5e5e5;
+        -webkit-border-radius: 5px;
+           -moz-border-radius: 5px;
+                border-radius: 5px;
+        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+           -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+                box-shadow: 0 1px 2px rgba(0,0,0,.05);
+      }
+.clear { clear:both; }
+
+
+
+
+
