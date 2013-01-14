@@ -1,0 +1,1 @@
+<a href="home"><img src="assets/images/dino/images/logo.png" /></a>
