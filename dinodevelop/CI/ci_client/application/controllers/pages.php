@@ -20,8 +20,10 @@ class Pages extends CI_Controller {
 		
 		$data['title'] = ucfirst($page); // Capitalize the first letter
 		$data['boo'] = 'hi';
+		$data['page'] = $page;
 
 			$this->load->view('templates/header', $data);
+			$this->load->view('templates/sub-header', $data);
 			$this->load->view('pages/'.$page, $data);
 			$this->load->view('templates/footer', $data);
 		

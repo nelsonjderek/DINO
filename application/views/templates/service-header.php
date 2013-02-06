@@ -1,11 +1,16 @@
-<div id="page-top-nav">
+<?php
+$sub_nav = '';
+$sub_nav .= '<div id="page-top-nav">
 	<div><ul>
-		<li style="padding:0;width:15px;"><img src="<?php echo $base_url; ?>assets/images/dino/images/lines-back.png" /> </li>
-		<a href="<?php echo $base_url; ?>services/web-design"><li>Web Development</li></a>
-		<a href="<?php echo $base_url; ?>services/e-commerce"><li>SEO</li></a>
-		<a href="<?php echo $base_url; ?>services/contracting"><li>Contracting</li></a>
-		<li style="padding:0;width:15px;float:right;"><img src="<?php echo $base_url; ?>assets/images/dino/images/lines-back.png" /> </li>
+	<a href="'.$base_url.'design"><li>Process</li></a>
+		<a href="'.$base_url.'design"><li>Design</li></a>
+		<a href="'.$base_url.'development"><li>Development</li></a>
+		<a href="'.$base_url.'email"><li>Email</li></a>
+		<a href="'.$base_url.'seo"><li>SEO</li></a>
+		<a  href="'.$base_url.'contracting"><li >Contracting</li></a>
+
 	</ul>
 </div>
 	<div class="clear"></div>
-</div>
+</div>';
+?>
