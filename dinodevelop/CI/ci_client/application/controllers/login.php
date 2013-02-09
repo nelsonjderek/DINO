@@ -1,11 +1,12 @@
 <?php
-session_start();
+
 class Login extends CI_Controller {
 
 	public function __construct()
 	{
 		parent::__construct();
 		$this->load->model('login_model');
+		session_start();
 	}
 
 	public function index()

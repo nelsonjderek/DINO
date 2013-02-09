@@ -1,4 +1,8 @@
-
+<div class="row-fluid lilmar ">
+	<?php echo $navigation; ?>
+<div class="span10 color-white">
+	<div class="wrap">
+		<?php echo $sub_header; ?>
 <p>The pricing information listed here is a reference, it's important to note that we quote most of our services and there is room for negotiation.</p>
 <h3>Fundamentals</h3>
 <div style="max-width:800px;margin:0 0 0 35px;" >
@@ -108,6 +112,9 @@
 <div class="clear"></div>
 </div>
 <div class="clear"></div>
+</div>
+</div>
+</div>
 </div>
 
 

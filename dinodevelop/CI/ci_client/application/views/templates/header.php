@@ -2,8 +2,7 @@
 <head>
 	<title><?php echo $title ?> - CodeIgniter 2 Tutorial</title>
 
-<link href="http://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
 <link href="assets/styles/main.css" rel="stylesheet" type="text/css" />
 <link href="assets/styles/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
 <link href="assets/styles/bootstrap.css" rel="stylesheet" type="text/css" />

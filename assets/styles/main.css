@@ -1,11 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
-@font-face {
-  font-family: 'Droid Sans';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Droid Sans'), local('DroidSans'), url('path/to/DroidSans.ttf') format('truetype');
-}
+
 
 /*Header Styles*/
 

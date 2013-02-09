@@ -21,10 +21,14 @@ class Pages extends CI_Controller {
 		$data['title'] = ucfirst($page); // Capitalize the first letter
 		$data['boo'] = 'hi';
 		$data['page'] = $page;
+		$data['navigation'] = $this->load->view('templates/navigation',$data,true);
+		$data['sub_header'] = $this->load->view('templates/sub-header',$data,true);
+		
 
-			$this->load->view('templates/header', $data);
-			$this->load->view('templates/sub-header', $data);
-			$this->load->view('pages/'.$page, $data);
+			$this->load->view('templates/header',$data);
+
+			
+			$this->load->view('pages/'.$page,$data);
 			$this->load->view('templates/footer', $data);
 		
 		

@@ -1,3 +1,7 @@
+<div class="row-fluid lilmar ">
+	<?php echo $navigation; ?>
+<div class="span10 color-white">
+	<div class="wrap">
 <h1>Ultimate Website Guide</h1>
 <h3>Getting Started</h3>
 <p>Starting for the first time or creating a new website is an exciting time! This guide was created to help guide you through our formal process and eliminate any surpirses so we are all on the same page. </p>
@@ -22,4 +26,6 @@
 </ol>
 
 <strong>Costs</strong><br />It is important to note that there are many costs associated with a website. You have the original build, yearly costs, maintenance costs, and any future alterations. Properly budgeting and proceeding with a development that is reflective of these costs is in the best interest of you, your users and us.</p>
-
+</div>
+</div>
+</div>
