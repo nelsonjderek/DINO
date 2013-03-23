@@ -6,7 +6,8 @@ class Login extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->model('login_model');
-		session_start();
+		$this->load->model('event_model');
+		
 	}
 
 	public function index()
@@ -37,9 +38,16 @@ class Login extends CI_Controller {
 	}
 	else
 	{
-			$this->load->view('templates/header');
-			$this->load->view('pages/home');
-			$this->load->view('templates/footer');
+			$data['title'] = 'Home';
+			$data['navigation'] = $this->load->view('templates/navigation',$data,true);
+		$data['sub_header'] = $this->load->view('templates/sub-header',$data,true);
+		
+
+			$this->load->view('templates/header',$data);
+
+			
+			$this->load->view('pages/home',$data);
+			$this->load->view('templates/footer', $data);
 	}
 	
 	
@@ -55,6 +63,13 @@ class Login extends CI_Controller {
 
 		 if($result) {
 		 	$this->session->set_userdata('logged_in','yes');
+		 	$this->session->set_userdata('username',$result['user']);
+		 	$this->session->set_userdata('userid',$result['userid']);
+		 	$this->session->set_userdata('usernamename',$result['usernamename']);
+		 	$this->session->set_userdata('group_id',$result['groupid']);
+		 	$this->session->set_userdata('permission',$result['per']);
+		 	$this->event_model->logevent('Logged In');
+		 	//var_dump($result);
 		 	return TRUE;
 	 	
 		 }else {
@@ -70,8 +85,9 @@ class Login extends CI_Controller {
 
 	public function logout() {
 
+		$this->event_model->logevent('Logged Out');
 		$this->session->unset_userdata('logged_in');
-  		session_destroy();
+  		
   		redirect('login', 'refresh');
 
 

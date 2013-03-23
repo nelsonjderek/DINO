@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title><?php echo $title ?> - CodeIgniter 2 Tutorial</title>
+	<title>Login - Dino Development</title>
 
 <link href="http://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet" type="text/css">
@@ -29,9 +29,11 @@
 
 
 
-        
-        <input type="text" class="input-block-level" name="username" placeholder="Username">
-        <input type="password" name="password" class="input-block-level" placeholder="Password">
+        Username<br />
+        <input type="text" class="input-block-level" name="username" ><br />
+
+        Password<br />
+        <input type="password" name="password" class="input-block-level" >
         <input type="hidden" name="login1" value="yes" />
         <button class="btn btn-large btn-inverse btn-primary pull-right" style="margin:10px 0 0 0;" id="login_submit" type="submit">Sign in</button>
         <div class="clear"></div>

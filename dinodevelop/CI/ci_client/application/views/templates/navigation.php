@@ -1,4 +1,4 @@
-<div class="span2">
+<?php /*<div class="span2">
 <div id="side-main-nav">
 
 <div class="accordion" id="accordion2">
@@ -143,4 +143,4 @@
 
 </div>
 </div>
-</div>
+</div>*/ ?>

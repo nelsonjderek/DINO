@@ -17,7 +17,7 @@
 
 	
 
-	if ($page != '') {
+	/*if ($page != '') {
 
 
 		$subhead = '<div class="subhead">';
@@ -39,6 +39,6 @@
 		}
 		echo $subhead;
 
-	}
+	}*/
 
 	?>
